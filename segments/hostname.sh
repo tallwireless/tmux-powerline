@@ -26,6 +26,10 @@ run_segment() {
 		fi
 	fi
 
-	hostname ${opts}
+    if [ "$TMUX_POWERLINE_SEG_HOSTNAME_ONLY_SSH" == "true" and ! -z $SSH_CLIENT]; then
+	    hostname ${opts}
+    else:
+	    hostname ${opts}
+    fi
 	return 0
 }
