@@ -1,7 +1,6 @@
 # Prints the current time in UTC.
 
 run_segment() {
-	echo -ne 'U:'
-    date -u +"%H:%M"
+	date -u +"%H:%MU"
 	return 0
 }
