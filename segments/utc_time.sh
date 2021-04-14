@@ -1,6 +1,6 @@
 # Prints the current time in UTC.
 
 run_segment() {
-	date -u +"%H:%MU"
+	date -u +"U:%H:%M"
 	return 0
 }
